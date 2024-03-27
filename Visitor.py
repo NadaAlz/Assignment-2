@@ -91,14 +91,14 @@ class Visitor:
                 # This checks if the event is tour, then it prints the tour details and adds the price
             elif isinstance(ticket.event, Tour):
                 print("Tour Name:", ticket.event.get_event_name())
-                print("Price", ticket.price)
+                print("Price:", ticket.price)
                 total_price += ticket.price
 
 
             # This checks if the event is special event, then it prints the special event details and adds the price
             elif isinstance(ticket.event, SpecialEvent):
                 print("Specil Event Name:", ticket.event.get_event_name())
-                print("Price", ticket.price)
+                print("Price:", ticket.price)
                 total_price += ticket.price
 
             # This checks if the visitor came with a group, then it applies 50% discount to the total price
