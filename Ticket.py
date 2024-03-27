@@ -1,17 +1,9 @@
 from Visitor import Visitor
+from Visitor import VisitorType
 from Exhibition import Exhibition
 from SpecialEvent import SpecialEvent
 from Tour import Tour
-from enum import Enum
 import random
-
-class VisitorType(Enum):  # A class to give Enum values to the self.vis_type attribute
-    """Class to represent Visitor Type as ENUM values"""
-    A = "Adult"
-    C = "Child"
-    S = "Senior"
-    T = "Teacher"
-    ST = "Student"
 
 
 class Ticket:
@@ -78,7 +70,7 @@ class Ticket:
 
         # Checks if the event is special event and prints its details
         elif isinstance(self.event, SpecialEvent):
-            print("Specil Event Name:", self.event.get_event_name())
+            print("Special Event Name:", self.event.get_event_name())
             print("Duration:", self.event.get_duration())
             print("Location:", self.event.get_location())
             print("Purpose:", self.event.get_purpose())
