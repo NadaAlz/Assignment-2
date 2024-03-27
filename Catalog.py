@@ -9,6 +9,7 @@ class Catalog:
     # Function to add the art object to the catalog list
     def add_art(self, art):
         self._catalog.append(art)
+        print(art.get_art_title(), "is successfully added to the museum")
 
     # Function to display each art object that is in the catalog
     def display_catalog(self):
