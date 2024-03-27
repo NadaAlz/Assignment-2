@@ -9,7 +9,7 @@ from Ticket import Ticket
 
 visitor1 = Visitor("Nada Mohd",19, VisitorType.ST,True)
 visitor2 = Visitor("Dalal", 52, VisitorType.A, False)
-visitor3 = Visitor("Maryam",26, VisitorType.A, False )
+visitor3 = Visitor("Maryam",26, VisitorType.A, True)
 exhibition1 = Exhibition("UAE Heritage", "3 hours", ExhibitionLocation.EH)
 special_event1 = SpecialEvent("Jazz Night", "4 hours", ExhibitionLocation.OS, Purpose.M)
 tour1 = Tour("Heritage Tour", "May 3, 2024", "Salim")
