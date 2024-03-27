@@ -85,7 +85,7 @@ class Visitor:
             # This checks if the event is exhibition, then it prints the exhibition details and adds the price
             if isinstance(ticket.event, Exhibition):
                 print("Exhibition Name:", ticket.event.get_event_name())
-                print("Price", ticket.price)
+                print("Price:", ticket.price)
                 total_price += ticket.price
 
                 # This checks if the event is tour, then it prints the tour details and adds the price
