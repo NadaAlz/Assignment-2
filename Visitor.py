@@ -2,7 +2,7 @@ from enum import Enum #Import the Enum Library
 from Exhibition import Exhibition
 from SpecialEvent import SpecialEvent
 from Tour import Tour
-#from Ticket import Ticket
+
 
 class VisitorType(Enum):  # A class to give Enum values to the self.vis_type attribute
     """Class to represent Visitor Type as ENUM values"""
