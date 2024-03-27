@@ -1,12 +1,12 @@
 from Event import Event
+import random
 
 
 class Tour(Event):
     """Class to represent a Tour as a Child of Event Class"""
 
     # Constructor
-    def __init__(self, event_name='', date='', guide='',
-                 capacity=0):  # We have an attribute that is initialized from the parent class, and we initialized 3 more attributes in this class. This means that a tour has 4 attributes, howeover, an event still has 1 attribute only.
+    def __init__(self, event_name='', date='', guide=''):  # We have an attribute that is initialized from the parent class, and we initialized 3 more attributes in this class. This means that a tour has 4 attributes, howeover, an event still has 1 attribute only.
 
         # This calls the constructor of the parent class (Event), and initializes the attributes of an event
         Event.__init__(self, event_name)
