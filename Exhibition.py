@@ -11,8 +11,7 @@ class Exhibition(Event):
     """Class to represent an Exhibition as a Child of Event Class"""
 
     # Constructor
-    def __init__(self, event_name='', duration='',
-                 location=ExhibitionLocation.PG):  # We have an attribute that is initialized from the parent class, and we initialized 2 more attributes in this class. This means that an exhibition has 3 attributes, howeover, an event still has 1 attribute only.
+    def __init__(self, event_name='', duration='',location=ExhibitionLocation.PG):  # We have an attribute that is initialized from the parent class, and we initialized 2 more attributes in this class. This means that an exhibition has 3 attributes, howeover, an event still has 1 attribute only.
         # This calls the constructor of the parent class (Event), and initializes the attributes of an event
         Event.__init__(self, event_name)
 
@@ -40,3 +39,4 @@ class Exhibition(Event):
         print("Exhibition name:", self.get_event_name())
         print("Duration:", self.get_duration())
         print("Location:", self.get_location())
+
