@@ -1,20 +1,6 @@
-from enum import Enum #Import the Enum Library
+from ENUM import ArtType
+from ENUM import ExhibitionLocation
 
-
-class ArtType(Enum):  # A class to give Enum values to the self._art_type attribute
-    """Class to represent Art Type as ENUM values"""
-
-    A = "Artwork"
-    B = "Artifact"
-    C = "Exhibition"
-
-
-class ExhibitionLocation(Enum):  # A class to give Enum values to the self._exhLoc and self.location attribute
-    """Class to represent Exhibition Location as ENUM values"""
-
-    PG = "Permanent Galleries"
-    EH = "Exhibition Halls"
-    OS = "Outdoor Spaces"
 
 
 class Art:
