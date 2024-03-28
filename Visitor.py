@@ -12,11 +12,13 @@ class VisitorType(Enum):  # A class to give Enum values to the self.vis_type att
     T = "Teacher"
     ST = "Student"
 
+
 class Visitor:
     """Class to represent a Visitor"""
 
     # Constructor
-    def __init__(self, vis_name='', age=0, vis_type=VisitorType.C,group=True):  # We gave attributes for each art, and specified the type of values, we have string, integer, bool, and ENUM.
+    def __init__(self, vis_name='', age=0, vis_type=VisitorType.C,
+                 group=True):  # We gave attributes for each art, and specified the type of values, we have string, integer, bool, and ENUM.
         # The attributes are protected using "_"
         self.vis_name = vis_name
         self.age = age
