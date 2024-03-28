@@ -3,7 +3,7 @@ class Catalog:
 
     def __init__(self):
         # Initialze catalog object with an empty catalog list
-        # The attribute is protected using "_"
+        # The attribute is private using "__"
         self.__catalog = []  # Aggregation: Catalog contains a list of Artwork objects.
 
     # Function to add the art object to the catalog list
