@@ -17,9 +17,8 @@ class Visitor:
     """Class to represent a Visitor"""
 
     # Constructor
-    def __init__(self, vis_name='', age=0, vis_type=VisitorType.C,
-                 group=True):  # We gave attributes for each art, and specified the type of values, we have string, integer, bool, and ENUM.
-        # The attributes are protected using "_"
+    def __init__(self, vis_name='', age=0, vis_type=VisitorType.C,group=True):  # We gave attributes for each art, and specified the type of values, we have string, integer, bool, and ENUM.
+        # The attributes are public
         self.vis_name = vis_name
         self.age = age
         self.vis_type = vis_type
@@ -27,7 +26,7 @@ class Visitor:
         # list of tickets that a visitor has
         self.tickets = []
 
-        # Setter functions to set the attributes of a visitor
+    # Setter functions to set the attributes of a visitor
 
     def set_vis_name(self, vis_name):
         self.vis_name = vis_name
