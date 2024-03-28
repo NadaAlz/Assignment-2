@@ -41,4 +41,8 @@ class Tour(Event):
 
     # Function to display a new tour
     def display_new_tour(self):
-        pass
+        print("Hosting New Tour")
+        print("Tour name:", self.get_event_name())
+        print("Date:", self.get_date())
+        print("Guide Name:", self.get_guide())
+        print("Capacity:", self.get_guide())
