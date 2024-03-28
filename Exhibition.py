@@ -1,10 +1,5 @@
 from Event import Event
-from enum import Enum
-class ExhibitionLocation(Enum):  # A class to give Enum values to the self._exhLoc and self.location attribute
-    """Class to represent Exhibition Location as ENUM values"""
-    PG = "Permanent Galleries"
-    EH = "Exhibition Halls"
-    OS = "Outdoor Spaces"
+from ENUM import ExhibitionLocation
 
 
 class Exhibition(Event):
