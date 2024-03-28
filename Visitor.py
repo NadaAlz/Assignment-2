@@ -1,16 +1,8 @@
-from enum import Enum #Import the Enum Library
+from ENUM import VisitorType #Import the Enum Library
 from Exhibition import Exhibition
 from SpecialEvent import SpecialEvent
 from Tour import Tour
 
-
-class VisitorType(Enum):  # A class to give Enum values to the self.vis_type attribute
-    """Class to represent Visitor Type as ENUM values"""
-    A = "Adult"
-    C = "Child"
-    S = "Senior"
-    T = "Teacher"
-    ST = "Student"
 
 
 class Visitor:
