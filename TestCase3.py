@@ -7,7 +7,7 @@ from Visitor import VisitorType
 from SpecialEvent import Purpose
 from Ticket import Ticket
 
-visitor1 = Visitor("Nada Mohd",19, VisitorType.ST,True)
+visitor1 = Visitor("Nada Mohd",19, VisitorType.ST,False)
 visitor2 = Visitor("Dalal", 52, VisitorType.A, False)
 visitor3 = Visitor("Maryam",26, VisitorType.A, True)
 exhibition1 = Exhibition("UAE Heritage", "3 hours", ExhibitionLocation.EH)
