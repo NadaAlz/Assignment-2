@@ -90,7 +90,7 @@ class Visitor:
 
             # This checks if the event is special event, then it prints the special event details and adds the price
             elif isinstance(ticket.event, SpecialEvent):
-                print("Specil Event Name:", ticket.event.get_event_name())
+                print("Special Event Name:", ticket.event.get_event_name())
                 print("Price:", ticket.price)
                 total_price += ticket.price
 
